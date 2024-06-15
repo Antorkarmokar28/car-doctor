@@ -1,8 +1,8 @@
 import { GoArrowRight } from 'react-icons/go';
-import bannerImg1 from '../../assets/images/banner/1.jpg'
-import bannerImg2 from '../../assets/images/banner/2.jpg'
-import bannerImg3 from '../../assets/images/banner/3.jpg'
-import bannerImg4 from '../../assets/images/banner/4.jpg'
+import bannerImg1 from '../../../assets/images/banner/1.jpg'
+import bannerImg2 from '../../../assets/images/banner/2.jpg'
+import bannerImg3 from '../../../assets/images/banner/3.jpg'
+import bannerImg4 from '../../../assets/images/banner/4.jpg'
 import { FiArrowLeft } from 'react-icons/fi';
 const Banner = () => {
     return (

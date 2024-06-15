@@ -1,5 +1,5 @@
-import aboutUsPersonImage from "../../assets/images/about_us/person.jpg"
-import aboutPartsImage from "../../assets/images/about_us/parts.jpg"
+import aboutUsPersonImage from "../../../assets/images/about_us/person.jpg"
+import aboutPartsImage from "../../../assets/images/about_us/parts.jpg"
 import { Link } from "react-router-dom";
 const About = () => {
     return (
@@ -9,7 +9,7 @@ const About = () => {
                     <div className="h-[473px]">
                         <img className="h-full" src={aboutUsPersonImage} alt="" />
                     </div>
-                    <img className="border-4 left-32 rounded border-slate-50 relative w-[250px] h-[332px] bottom-40" src={aboutPartsImage} alt="" />
+                    <img className="border-4 md:left-32 rounded border-slate-50 relative w-[250px] h-[332px] bottom-40" src={aboutPartsImage} alt="" />
                 </div>
                 <div className="w-full md:w-2/4">
                     <h5 className="text-[#FF3811] text-xl font-bold mb-5">About Us</h5>
