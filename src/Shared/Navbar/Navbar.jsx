@@ -8,14 +8,14 @@ import { MdClose } from "react-icons/md";
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false)
     return (
-        <nav className="w-full bg-white font-Inter fixed top-0 left-0">
+        <nav className="w-full bg-white font-Inter sticky">
             <div className="container px-4 mx-auto flex justify-between items-center">
                 <div>
                     <Link to="/">
                         <img className="w-16 h-16" src={logo} alt={`logo`} />
                     </Link>
                 </div>
-                <ul className={`p-5 md:p-0 md:flex md:items-center gap-6 absolute md:static top-16 left-0 w-full md:w-auto bg-blue-50 transition-all duration-500 ease-in ${isOpen ? 'block' : 'hidden'}`}>
+                <ul className={`hidden p-5 md:p-0 md:flex items-center gap-8 md:bg-white'}`}>
                     <li className="mb-6 md:mb-0">
                         <NavLink className="font-semibold hover:text-[#FF3811] duration-100 hover:ease-in" to="/">
                             Home
@@ -55,6 +55,33 @@ const Navbar = () => {
                     }
                 </button>
             </div>
+            <ul className={`md:hidden ${isOpen ? 'block' : 'hidden'} p-5 md:p-0 md:flex items-center gap-8 md:bg-white`}>
+                <li className="mb-6 md:mb-0">
+                    <NavLink className="font-semibold hover:text-[#FF3811] duration-100 hover:ease-in" to="/">
+                        Home
+                    </NavLink>
+                </li>
+                <li className="mb-6 md:mb-0">
+                    <NavLink className="font-semibold hover:text-[#FF3811] duration-100 hover:ease-in" to="/about">
+                        About
+                    </NavLink>
+                </li>
+                <li className="mb-6 md:mb-0">
+                    <NavLink className="font-semibold hover:text-[#FF3811] duration-100 hover:ease-in" to="/services">
+                        Services
+                    </NavLink>
+                </li>
+                <li className="mb-6 md:mb-0">
+                    <NavLink className="font-semibold hover:text-[#FF3811] duration-100 hover:ease-in" to="/blog">
+                        Blog
+                    </NavLink>
+                </li>
+                <li className="mb-6 md:mb-0">
+                    <NavLink className="font-semibold hover:text-[#FF3811] duration-100 hover:ease-in" to="/contact">
+                        Contact
+                    </NavLink>
+                </li>
+            </ul>
         </nav>
     );
 };
